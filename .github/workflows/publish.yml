@@ -55,7 +55,7 @@ jobs:
       run: cd .maven && ./maven-publish.sh
       
     - name: Upload Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: approov-sdk-artifact-${{ github.ref_name }}
         path: approov-sdk.aar
