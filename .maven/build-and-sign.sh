@@ -10,7 +10,7 @@ fi
 
 # Extract the tag name from GITHUB_REF
 CURRENT_TAG=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
-CURRENT_TAG=3.4.0
+
 # Check if the extracted tag matches the expected format (e.g., x.y.z)
 if [[ ! "$CURRENT_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
     echo "Error: Current Git tag ($CURRENT_TAG) does not match the required format (x.y.z)."
