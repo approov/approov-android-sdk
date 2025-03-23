@@ -1,3 +1,0 @@
-install:
-- FILE="-Dfile=approov-sdk.aar"
-- mvn install:install-file $FILE -DgroupId=com.github.approov -DartifactId=approov-android-sdk -Dversion=3.2.1 -Dpackaging=aar -DgeneratePom=true
