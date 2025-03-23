@@ -38,8 +38,8 @@ if [ -z "$GPG_PASSWORD" ]; then
 fi
 
 # Paths to required files
-AAR_PATH="../approov-sdk/build/outputs/aar/approov-sdk-release.aar"
-JAVADOC_JAR_PATH="../approov-sdk/docs/javadoc.jar"
+AAR_PATH="../approov-sdk/approov-sdk.aar"
+JAVADOC_JAR_PATH="../approov-sdk/javadoc.jar"
 POM_FILE_PATH="../approov-sdk/pom.xml"
 
 # Verify existence of required files
