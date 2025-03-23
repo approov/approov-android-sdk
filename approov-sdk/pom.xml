@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.approov</groupId>
   <artifactId>approov-android-sdk</artifactId>
-  <version>3.4.0</version>
+  <version>VERSION_PLACEHOLDER</version>
   <packaging>aar</packaging>
  <name>Approov SDK</name>
     <description>Approov SDK AAR for Android</description>
