@@ -43,8 +43,8 @@ jobs:
 
     - name: Verify AAR Presence
       run: |
-        if [ ! -f "approov-sdk.aar" ]; then
-          echo "Error: approov-sdk.aar not found!"
+        if [ ! -f "./approov-sdk/approov-sdk.aar" ]; then
+          echo "Error: ./approov-sdk/approov-sdk.aar not found!"
           exit 1
         fi
 
