@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.approov</groupId>
+  <artifactId>approov-android-sdk</artifactId>
+  <version>3.4.0</version>
+  <packaging>aar</packaging>
+ <name>Approov SDK</name>
+    <description>Approov SDK AAR for Android</description>
+    <url>https://approov.io</url>
+
+    <licenses>
+        <license>
+            <name>Proprietary License</name>
+            <url>https://approov.io/info/terms</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>approov</id>
+            <name>Approov</name>
+            <email>support@approov.io</email>
+            <organization>Approov Inc.</organization>
+            <organizationUrl>https://approov.io</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <url>https://approov.io</url>
+        <connection>scm:local:approov-sdk</connection>
+        <developerConnection>scm:local:approov-sdk</developerConnection>
+    </scm>
+</project>
