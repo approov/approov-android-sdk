@@ -49,7 +49,7 @@ jobs:
         fi
 
     - name: Create Package
-      run: cd .maven && ./build_and_sign.sh
+      run: cd .maven && ./build-and-sign.sh
 
     - name: Publish Package
       run: cd .maven && ./maven-publish.sh
