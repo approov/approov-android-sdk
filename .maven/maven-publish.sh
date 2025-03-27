@@ -24,6 +24,9 @@ PACKAGE_NAME="approov-android-sdk"
 PACKAGE_DIR_STRUCTURE="io/approov/${PACKAGE_NAME}"
 BODY_ARTIFACT="${PACKAGE_NAME}-${CURRENT_TAG}.zip"
 
+# Create the zip file: we zip the top directory of the package: io/
+zip -r "${BODY_ARTIFACT}" io/
+
 # Encode username and password for basic authentication
 MAVEN_CREDENTIALS=$(printf "%s:%s" "$MAVEN_USERNAME" "$MAVEN_PASSWORD" | base64)
 
