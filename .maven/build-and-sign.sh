@@ -51,7 +51,11 @@ for file in "$AAR_PATH" "$JAVADOC_JAR_PATH" "$POM_FILE_PATH"; do
 done
 
 # Update POM file with the correct version
-sed -i "s/VERSION_PLACEHOLDER/${VERSION}/g" "$POM_FILE_PATH"
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' "s/VERSION_PLACEHOLDER/${VERSION}/g" "$POM_FILE_PATH"
+else
+  sed -i "s/VERSION_PLACEHOLDER/${VERSION}/g" "$POM_FILE_PATH"
+fi
 
 # Create destination directory
 DESTINATION_DIR="${PACKAGE_DIR_STRUCTURE}/${VERSION}"
