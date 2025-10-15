@@ -2,8 +2,14 @@
 # Ensure the script fails on errors
 set -e
 
-# Extract the tag name from GITHUB_REF
-CURRENT_TAG="" # Placeholder for local build, set this variable manually if needed
+# Check current execution directory is .maven or abort
+if [[ "$(basename "$PWD")" != ".maven" ]]; then
+    echo "Error: This script must be run from the .maven directory."
+    exit 1
+fi
+
+# Set tag name manually for local builds
+CURRENT_TAG="3.5.1" # Placeholder for local build, set this variable manually if needed
 
 # Check if the extracted tag matches the expected format (e.g., x.y.z)
 if [[ ! "$CURRENT_TAG" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
@@ -62,5 +68,5 @@ for algo in sha1 sha256 sha512 md5; do
     done
 done
 
-echo "Build and signing complete: Files are in ${DESTINATION_DIR}"
+echo "Local build complete: Files are in ${DESTINATION_DIR}"
 
