@@ -35,4 +35,4 @@ curl --request POST \
   --verbose \
   --header "Authorization: Basic ${MAVEN_CREDENTIALS}" \
   --form "bundle=@${BODY_ARTIFACT}" \
-  "https://central.sonatype.com/api/v1/publisher/upload?publishingType=USER_MANAGED&name=${PACKAGE_NAME}"
+  "https://central.sonatype.com/api/v1/publisher/upload?publishingType=AUTOMATIC&name=${PACKAGE_NAME}"
